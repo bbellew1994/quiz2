@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main() {
+	int count = 1;
+	int result = 0;
+	int userIn = 0;
+	
+	while(count <= 5){
+	    puts("Enter a number");
+           scanf("%d",&userIn);
+        
+           if(count == 1){
+              result = userIn;
+           }
+           else{
+              if(userIn < result) {
+                 result = userIn;
+              }
+           } 
+        count++;
+	}
+
+    printf("result: %d\n", result);
+}
